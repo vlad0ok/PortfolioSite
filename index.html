@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./images/Favicon.svg" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Poppins:wght@400;500;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -13,13 +14,28 @@
     <title>Portfolio Vlad Vechkasov</title>
   </head>
   <body>
-    <header>
+    <div id="modal" class="modal">
       <h2>Vlad Vechkasov</h2>
-      <a href="contactme.html"
-        ><button class="contact-btn">CONTACT ME</button></a
+      <h3>Telegram: @vlaadok</h3>
+      <img
+        src="./images/qrtg.jpg"
+        alt="QR to telegram"
+        width="150"
+        height="150"
+      />
+      <h3>Email:</h3>
+      <a href="mailto:vledelolok@gmail.com">vledelolok@gmail.com</a>
+      <h3>LinkedIn</h3>
+      <a href="https://www.linkedin.com/in/vlad-vechkasov-81b0482a0/"
+        >Vlad Vechkasov</a
       >
-    </header>
+      <button id="closeModal" class="back-btn">GO BACK</button>
+    </div>
     <main>
+      <header>
+        <h2>Vlad Vechkasov</h2>
+        <button id="openModal1" class="contact-btn">CONTACT ME</button>
+      </header>
       <section class="first-section">
         <div class="container-first">
           <div class="logo"></div>
@@ -38,7 +54,7 @@
               <img src="images/design.svg" alt="Logo Design" />
               <h2>Figma design</h2>
             </div>
-            <div class="skill skill-front">
+            <div id="front-skill" class="skill skill-front">
               <img src="images/frontend.svg" alt="Logo FrontEnd" />
               <h2>FrontEnd Dev</h2>
               <div class="skills-front">
@@ -132,10 +148,11 @@
           </h3>
         </div>
         <div class="logo"></div>
-        <a class="footer-btn" href="contactme.html"
-          ><button class="contact-btn">CONTACT ME</button></a
-        >
+        <button id="openModal2" class="contact-btn footer-btn">
+          CONTACT ME
+        </button>
       </footer>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
