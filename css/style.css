@@ -1,10 +1,10 @@
 html {
-  cursor: url(/images/cursor.png), auto;
+  cursor: url(./images/cursor.png), auto;
 }
 
 a:hover,
 button:hover {
-  cursor: url(/images/cursorHover.png), auto;
+  cursor: url(./images/cursorHover.png), auto;
 }
 
 body {
@@ -108,7 +108,7 @@ a {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-image: url(/images/logo.jpg);
+  background-image: url(./images/logo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
