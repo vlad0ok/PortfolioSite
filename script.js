@@ -1,17 +1,17 @@
 // Hover Front-end skills
+let frontSkills = document.getElementById("front-skill");
 
-document.getElementById("front-skill").addEventListener("mouseover", () => {
+frontSkills.addEventListener("mouseover", () => {
   let zagolovok = document.querySelector("#front-skill h2");
   zagolovok.textContent = "My skills";
 });
 
-document.getElementById("front-skill").addEventListener("mouseout", () => {
+frontSkills.addEventListener("mouseout", () => {
   let zagolovok = document.querySelector("#front-skill h2");
   zagolovok.textContent = "FrontEnd Dev";
 });
 
 // Modal window
-
 const modal = document.getElementById("modal");
 const openModalBtn1 = document.getElementById("openModal1");
 const openModalBtn2 = document.getElementById("openModal2");
